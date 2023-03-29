@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+      
+  <!-- Modificaciones a Boostrap -->
+  <style>
+    .col-md-4{
+      padding-bottom: 5px;
+    }
+    .col-md-8{
+      padding-bottom: 5px;
+    }
+    .border{
+      border: 3px solid #99a4af!important;
+    }
+
+  </style>
+  </head>
+  <body>
+    <div class="page-header">
+      <div class="row" style="border-style: solid; border-color: #99a4af!important; border-width: medium; padding: 1px; margin: 1px;">
+        <img src="http://drive.google.com/uc?export=view&id=1BRzFhsBr_M6I0wjHXyIZxCwGSmPvVfMh" style="height: 50px; margin: 20px"></img>
+      <h1 style="margin: 20px;">Reporte de Producto No Conforme.</h1>
+      </div>  
+    </div>
+<form id="formulario">
+  <fieldset class="border p-2">
+   <legend  class="w-auto" style="margin-left: 50px">Reporte Calidad</legend>
+   <div class="container">
+    <!--Fila número de certificado de no Conformidad-->
+  <div class="row g-3 align-items-center">
+    <label for="nombreInspector" class="col-sm-4 col-form-label offset-md-1">Inspector de Calidad</label>
+    <div class="col-md-4">
+      <select id="nombreInspector" name="nombreInspector" class="form-control">
+        <option disabled selected>Selecciona una opción</option>
+      </select>
+    </div>
+  </div>
+
+  <!--Fila número de certificado de no Conformidad-->
+  <div class="row g-3 align-items-center">
+    <label for="noCertificado" class="col-sm-4 col-form-label offset-md-1">Número de Certificado de No conformidad</label>
+    <div class="col-md-4">
+      <input id="noCertificado" class="form-control" type="text" placeholder="Ingrese su número de Certificado" requerid>
+    </div>
+  </div>
+
+  <!--Fila Referencia Inspeccionada-->
+  <div class="row g-3 align-items-center">
+    <label for="referenciaInspeccionada" class="col-sm-4 col-form-label offset-md-1">Referencia Inspeccionada</label>
+    <div class="col-md-4">
+      <select id="referenciaInspeccionada" name="referenciaInspeccionada" class="js-example-basic-single" style="width: 100%;" onchange="referenciaOnchange(this)">
+        <option disabled selected>Selecciona una opción</option>
+        </select>
+    </div>
+  </div>
+
+  <!--Fila Descripcion de referencia-->
+  <div class="row g-3 align-items-center">
+    <label for="descreferencia" class="col-sm-4 col-form-label offset-md-1">Descripción de Referencia:</label>
+    <div class="col-md-4">
+      <input id="descreferencia" name="descreferencia" class="form-control" type="text" requerid disabled>
+    </div>
+  </div>
+
+  <!--Fila tipo de Orden-->
+  <div class="row g-3 align-items-center">
+    <label for="tipoOrden" class="col-sm-4 col-form-label offset-md-1">Tipo de Orden:</label>
+    <div class="col-md-4">
+      <select id="tipoOrden" name="tipoOrden" class="form-control" onchange="ordenOnchange(this)">
+          <option disabled selected>Selecciona una opción</option>
+          <option value="Manufactura">Manufactura</option>
+          <option value="Compra">Compra</option>
+        </select>
+    </div>
+  </div>
+
+  <!--Fila Número de Orden-->
+    <div class="row g-3 align-items-center">
+      <label for="noOrden" class="col-sm-4 col-form-label offset-md-1">Número de la Orden:</label>
+      <div class="col-md-4">
+        <input id="noOrden" class="form-control" type="text" placeholder="Ingrese el número de la Orden" requerid pattern="[0-9]+">
+      </div>
+    </div>
+  <!--Fila Nombre Proovedor o Cliente-->
+  <div class="row g-3 align-items-center">
+      <label for="nomProvCli" class="col-sm-4 col-form-label offset-md-1">Nombre Proveedor/Cliente:</label>
+      <div class="col-md-4">
+        <select id="nomProvCli" name="nomProvCli" class="form-control">
+          <option disabled selected>Selecciona una opción</option>
+        </select>
+      </div>
+    </div>
+
+  <!--Fila Cantidad del Lote y Número de Muestra-->
+    <div class="form-row align-items-center">
+      <!--Cantidad de Lote-->
+        <label for="cantidadLote" class="col-sm-2 col-form-label offset-md-1">Cantidad del Lote:</label>
+        <input id="cantidadLote" class="form-control col-md-2" type="text" placeholder="Ingrese cantidad de lote" requerid>
+      <!--Numero de Muestra-->
+        <label for="noMuestra" class="col-sm-2 col-form-label">Número de muestra:</label>
+        <input id="noMuestra" class="form-control col-md-2" type="text" placeholder="Ingrese el numero de Muestra" requerid>
+    </div>
+
+    <div class="form-row align-items-center">
+      <!--Cantidad no Conforme-->
+        <label for="noconforme" class="col-sm-2 col-form-label offset-md-1">Cantidad no conforme de la muestra:</label>
+        <input id="noconforme" class="form-control col-md-2" type="text" placeholder="Ingrese cantidad de no conforme" requerid>
+      <!--Numero de Muestra-->
+        <label for="rechazadas" class="col-sm-2 col-form-label">Cantidad de Piezas rechazadas:</label>
+        <input id="rechazadas" class="form-control col-md-2" type="text" placeholder="Ingrese el número de piezas rechazadas" requerid>
+    </div>
+</div>
+</fieldset>
+  <!--Div si selecciona Orden de Manufactura-->
+  <div id="seccionManufactura" style="display:none;">
+  <fieldset class="border p-2">
+   <legend  class="w-auto" style="margin-left: 50px">Información de la Inspección</legend>
+        <!--Fila Centro de Trabajo-->
+        <div class="row g-3 align-items-center">
+          <label for="centroTrabajo" class="col-sm-4 col-form-label offset-md-1">Centro de Trabajo</label>
+          <div class="col-md-4">
+            <select id="centroTrabajo" name="centroTrabajo" class="js-example-basic-single" style="width: 100%;">
+              <option disabled selected>Selecciona una opción</option>
+            </select>
+          </div>
+        </div>
+        <!--Fila de Check de Horario-->
+        <div class="row g-3 align-items-center">
+          <label for="horario" class="col-sm-4 col-form-label offset-md-1">Turno</label>
+          <div class="col-md-4">
+            <select id="horario" name="horario" class="form-control">
+              <option disabled selected>Selecciona una opción</option>
+            </select>
+          </div>
+        </div>
+
+
+      <div class="form-row align-items-center" style="padding-bottom: 15px; padding-left: 150px; ">
+      <!--Operario--> 
+        <label for="nombreOperario" class="col-sm-2 col-form-label offset-md-1">Operario</label>
+        <div class="col-md-3">
+            <select id="nombreOperario" name="nombreOperario" class="js-example-basic-single" style="width: 100%;">
+              <option disabled selected>Selecciona una opción</option>
+            </select>
+          </div>
+      <!--Responsable-->
+        <div class="form-check col-sm-2 form-check-inline">
+          <label class="form-check-label offset-md-1" for="ResponsableO">Responsable:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="form-check-input" type="radio" name="ResponsableO" id="ResponsableO1" value="Si">
+          <label class="form-check-label" for="ResponsableO1">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="ResponsableO" id="ResponsableO2" value="No">
+          <label class="form-check-label" for="ResponsableO2">No</label>
+        </div>
+      </div>
+      
+      <div class="form-row align-items-center" style="padding-bottom: 15px; padding-left: 150px; ">
+      <!--Jefe de Turno-->
+        <label for="nombreLider" class="col-sm-2 col-form-label offset-md-1">Jefe de Turno</label>
+        <div class="col-md-3">
+            <select id="nombreLider" name="nombreLider" class="form-control">
+              <option disabled selected>Selecciona una opción</option>
+            </select>
+          </div>
+      <!--Responsable-->
+        <div class="form-check col-sm-2 form-check-inline">
+          <label class="form-check-label offset-md-1" for="ResponsableJ">Responsable:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="form-check-input" type="radio" name="ResponsableJ" id="ResponsableJ1" value="Si">
+          <label class="form-check-label" for="ResponsableJ1">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="ResponsableJ" id="ResponsableJ2" value="No">
+          <label class="form-check-label" for="ResponsableJ2">No</label>
+        </div>
+      </div>
+
+      <!--Fila Procedimiento-->
+        <div class="row g-3 align-items-center">
+          <label for="procInterno" class="col-sm-2 col-form-label offset-md-1">Procedimiento Interno que incumple</label>
+          <div class="col-md-6">
+            <select id="procInterno" name="procInterno" class="form-control">
+              <option disabled selected>Selecciona una opción</option>
+            </select>
+          </div>
+        </div>
+        </fieldset>
+  </div>
+
+</fieldset>
+<fieldset class="border p-2">
+   <legend  class="w-auto" style="margin-left: 50px">Descripcion de la Inspección</legend>
+        <!--Fila Centro de Trabajo-->
+        <div class="row g-3 align-items-center">
+          <label for="factor" class="col-sm-4 col-form-label offset-md-1">Factor</label>
+          <div class="col-md-4">
+            <select id="factor" name="factor" class="form-control" onchange="factorChange(this)">
+              <option disabled selected>Selecciona una opción</option>
+            </select>
+          </div>
+        </div>
+        <!--Fila de Check de Horario-->
+        <div class="row g-3 align-items-center">
+          <label for="descripcionFactor" class="col-sm-4 col-form-label offset-md-1">Descripción del Factor</label>
+          <div class="col-md-4">
+            <select id="descripcionFactor" name="descripcionFactor" class="form-control">
+              <option disabled selected>Selecciona una opción</option>
+            </select>
+          </div>
+        </div>
+
+      <label for="intervencion" class="col-sm-4 col-form-label offset-md-4">¿Intervino en el analísis?</label>
+      <div class="form-row align-items-center" style="padding-bottom: 15px; padding-left: 150px; ">   
+      <!--Jefe de planta-->
+        <label for="AnalisisJP class="col-sm-2 col-form-label offset-md-1">Jefe de Planta</label>
+        <!--Responsable-->
+        <div class="form-check col-sm-2 form-check-inline">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="form-check-input" type="radio" name="AnalisisJP" id="AnalisisJP1" value="Si">
+          <label class="form-check-label" for="AnalisisJP1">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="AnalisisJP" id="AnalisisJP2" value="No">
+          <label class="form-check-label" for="AnalisisJP2">No</label>
+        </div>
+      </div>
+    <!--Lider de Turno-->
+      <div class="form-row align-items-center" style="padding-bottom: 15px; padding-left: 150px; ">   
+      <!--Operario-->
+        <label for="nombreOperario" class="col-sm-2 col-form-label offset-md-1">Lider de Turno</label>
+        <!--Responsable-->
+        <div class="form-check col-sm-2 form-check-inline">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="form-check-input" type="radio" name="AnalisisLT" id="AnalisisLT1" value="Si">
+          <label class="form-check-label" for="AnalisisLT1">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="AnalisisLT" id="AnalisisLT2" value="No">
+          <label class="form-check-label" for="AnalisisLT2">No</label>
+        </div>
+      </div>
+      
+      <!--Funcionario-->
+      <div class="form-row align-items-center" style="padding-bottom: 15px; padding-left: 150px; ">   
+      <!--Operario-->
+        <label for="nombreOperario" class="col-sm-2 col-form-label offset-md-1">Funcionario</label>
+        <!--Responsable-->
+        <div class="form-check col-sm-2 form-check-inline">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="form-check-input" type="radio" name="AnalisisF" id="AnalisisF1" value="Si">
+          <label class="form-check-label" for="AnalisisF1">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="AnalisisF" id="AnalisisF2" value="No">
+          <label class="form-check-label" for="AnalisisF2">No</label>
+        </div>
+      </div>
+
+      <!--Inspector-->
+      <div class="form-row align-items-center" style="padding-bottom: 15px; padding-left: 150px; ">   
+      <!--Operario-->
+        <label for="nombreOperario" class="col-sm-2 col-form-label offset-md-1">Inspector</label>
+        <!--Responsable-->
+        <div class="form-check col-sm-2 form-check-inline">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="form-check-input" type="radio" name="AnalisisI" id="AnalisisI1" value="Si">
+          <label class="form-check-label" for="AnalisisI1">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="AnalisisI" id="AnalisisI2" value="No">
+          <label class="form-check-label" for="AnalisisI2">No</label>
+        </div>
+      </div>
+
+      <!--Ingeniero de Manufactura-->
+      <div class="form-row align-items-center" style="padding-bottom: 15px; padding-left: 150px; ">   
+      <!--Operario-->
+        <label for="nombreOperario" class="col-sm-2 col-form-label offset-md-1">Ingeniero de Manufactura</label>
+        <!--Responsable-->
+        <div class="form-check col-sm-2 form-check-inline">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="form-check-input" type="radio" name="AnalisisIM" id="AnalisisIM1" value="Si">
+          <label class="form-check-label" for="AnalisisIM1">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="AnalisisIM" id="AnalisisIM2" value="No">
+          <label class="form-check-label" for="AnalisisIM2">No</label>
+        </div>
+      </div>
+      <div class="col-md-8 offset-md-1">
+        <label for="descripcionAnalisis" class="control-label">Descripción del analísis</label><br>
+        <textarea class="form-control" id="descripcionAnalisis" name="descripcionAnalisis" rows="5"></textarea>
+      </div>
+      </fieldset>
+
+</fieldset>
+<fieldset class="border p-2">
+   <legend  class="w-auto" style="margin-left: 50px">Descripción del Reporte</legend>
+  <!--Div Descripción de reporte-->
+  <div class="container">
+    <div class="row g-3 align-items-center">
+      <label for="defecto" class="col-sm-4 col-form-label offset-md-1">Defecto</label>
+      <div class="col-md-4">
+        <select id="defecto" name="defecto" class="js-example-basic-single" style="width: 100%;">
+          <option disabled selected>Selecciona una opción</option>
+        </select>
+      </div>
+    </div>
+  <div class="row">
+      <div class="col-md-8 offset-md-1">
+        <label for="descripcion" class="control-label">Descripción de la inspección</label><br>
+        <small id="passwordHelpInline" class="text-muted">
+          Describa detalladamente los datos del rechazo incluya control dimensional, pruebas que realizó, evidencia fotográfica  y todo lo que necesite para detallar la no conformidad
+        </small>
+        <textarea class="form-control" id="descripcion" rows="5"></textarea>
+      </div>
+    </div>
+
+    <div class="row ">
+      <label for="archivo1" class="col-sm-8 col-form-label offset-md-1">Selecciona imagen de producto NO Conforme</label>
+    </div>
+    <!--Imagen No conforme 1-->
+    <div class="ro2" >
+    <div class="col-md-8 offset-md-1">
+      <div class="custom-file">
+          <input type="file" name="archivo1" class="custom-file-input" id="customFile" onchange="saveFileNoConforme(this)">
+          <label class="custom-file-label" for="customFile">Selecciona imagen NO Conforme #1</label>
+        </div>
+      </div>
+    </div>
+
+    <!--Imagen No conforme 2-->
+
+    <div class="ro2" >
+    <div class="col-md-8 offset-md-1">
+      <div class="custom-file">
+          <input type="file" name="archivo1" class="custom-file-input" id="customFile" onchange="saveFileNoConforme(this)">
+          <label class="custom-file-label" for="customFile">Selecciona imagen NO Conforme #2</label>
+        </div>
+      </div>
+    </div>
+
+    <!--Imagen No conforme 3-->
+
+    <div class="ro2" >
+    <div class="col-md-8 offset-md-1">
+      <div class="custom-file">
+          <input type="file" name="archivo1" class="custom-file-input" id="customFile" onchange="saveFileNoConforme(this)">
+          <label class="custom-file-label" for="customFile">Selecciona imagen NO Conforme #3</label>
+        </div>
+      </div>
+    </div>
+    <!--Imagen Conforme -->
+
+    <div class="row ">
+      <label for="archivo2" class="col-sm-8 col-form-label offset-md-1">Selecciona imagen de producto Conforme</label>
+    </div>
+
+    <div class="row ">
+    <div class="col-md-8 offset-md-1">
+      <div class="custom-file">
+          <input type="file" name="archivo2" class="custom-file-input" id="customFile" onchange="saveFileConforme(this)">
+          <label class="custom-file-label" for="customFile">Selecciona imagen Conforme</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</fieldset>
+<fieldset class="border p-2">
+   <legend  class="w-auto" style="margin-left: 50px">Notificación</legend>
+   <div class="row g-3 align-items-center">
+     <label for="proveedor" class="col-sm-8 col-form-label offset-md-1" style="font-size: small;">
+          Usted puede registrar más de un correo en los dos campos separando los correos por comas(,)
+          Ejemplo: example1@gmail.com, example2@gmail.com, example3@gmail.com
+     </label>
+   </div>
+  <div class="row g-3 align-items-center">
+    <label for="correo" class="col-sm-4 col-form-label offset-md-1">Email de Notificación</label>
+    <div class="col-md-4">
+      <input id="correo" class="form-control" type="text" placeholder="Ingrese los correos a notificar" requerid>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-md-8 offset-md-1">
+        <input style="margin-top: 3px; font-size: smaller;" id="boton" type="submit" class="btn btn-lg btn-success" data-toggle="modal" data-target="#exampleModal"
+          value="Enviar Reporte">
+      </div>
+    </div>
+</fieldset>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" id="headermensaje">
+            <h5 class="modal-title" id="titulomensaje">Realizado</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="mensaje" class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="sumbit" class="btn btn-success" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</form>
+        <script src="js/validaciones.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="js/onChange.js"></script>
+        <script src="js/request.js"></script>
+  </body>
+</html>
