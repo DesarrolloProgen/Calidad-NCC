@@ -13,7 +13,6 @@ function obtenerDatos() {
         .then((response) => {
           return response.json();
         })
-        console.log("Entro al JSON")
         .then((jsondata) => cambiarListas(data, jsondata));
     });
 }
