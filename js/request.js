@@ -7,10 +7,13 @@ function obtenerDatos() {
       return response.json();
     })
     .then(function (data) {
+      console.log(data);
+      console.log("Respuesta del servidor")
       fetch("./js/referencias.json")
         .then((response) => {
           return response.json();
         })
+        console.log("Entro al JSON")
         .then((jsondata) => cambiarListas(data, jsondata));
     });
 }
