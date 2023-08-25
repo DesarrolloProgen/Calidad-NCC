@@ -42,13 +42,18 @@ $(document).ready(function () {
 
 function ordenOnchange(sel) {
   divManufactura = document.getElementById("seccionManufactura");
+  divDescripcion = document.getElementById("seccionDescripcionInspeccion");
+
   $("#nomProvCli").html("");
   if (sel.value == "Manufactura") {
     divManufactura.style.display = "";
+    divDescripcion.style.display = "";
     $("#nomProvCli").html(clientes);
   }
   if (sel.value == "Compra" || sel.value == "Selecciona una opción") {
     divManufactura.style.display = "none";
+    divDescripcion.style.display = "none";
+
     $("#nomProvCli").html(proveedores);
   }
 }
