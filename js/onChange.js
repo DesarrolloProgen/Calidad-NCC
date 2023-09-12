@@ -43,7 +43,6 @@ $(document).ready(function () {
 function ordenOnchange(sel) {
   divManufactura = document.getElementById("seccionManufactura");
   divDescripcion = document.getElementById("seccionDescripcionInspeccion");
-
   $("#nomProvCli").html("");
   if (sel.value == "Manufactura") {
     divManufactura.style.display = "";
