@@ -246,7 +246,7 @@ function validaciones() {
         "Ingrese el proceso que se incumplió";
       return false;
     }
-  }
+  
   // Factor
   if (
     factor.value == null ||
@@ -353,6 +353,8 @@ function validaciones() {
       "Ingrese la descripción del análisis de la inspección";
     return false;
   }
+
+}
   // Defecto de la inspección
   if (
     defecto.value == null ||
