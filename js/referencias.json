@@ -30726,5 +30726,609 @@
     {
         "Codigo": "PR01M_RC-410R-DSF",
         "Descripcion": "TAPA EMBOLO DOSIFICADORA"
+    },
+    {
+        "Codigo": "MP05C_LLDPE.R.1.PV.NT",
+        "Descripcion": "POLIETILENO LINEAL BAJA DENSIDAD PARA ROTOMOLDEO PULVERIZADO"
+    },
+    {
+        "Codigo": "PR01M_ALC-004.S",
+        "Descripcion": "ALCANCIA FUMIGADORA LA CLASICA SOPLAR Y DESBARBAR"
+    },
+    {
+        "Codigo": "PR01M_FN-934-01.C",
+        "Descripcion": "MALLA FILTRO LLAVE DE PASO CORTAR MALLA 53X23.6"
+    },
+    {
+        "Codigo": "PR01M_NEB-100",
+        "Descripcion": "ACTUADOR PLÁSTICO MICRO SWITCH"
+    },
+    {
+        "Codigo": "PR01M_RA-501B.PB",
+        "Descripcion": "CAMARA DE PRESION FUMIGADORAS ALIADA Y ACTIVA PROBAR CAMARA"
+    },
+    {
+        "Codigo": "PR01M_RC-125-DSF",
+        "Descripcion": "RACOR FIJO MANGUERA DOSIFICADORA CHEQUE"
+    },
+    {
+        "Codigo": "PR01M_RC-125-DSF-01",
+        "Descripcion": "RACOR FIJO MANGUERA DOSIFICADORA CHEQUE"
+    },
+    {
+        "Codigo": "PR01M_RC-126-DSF",
+        "Descripcion": "RACOR MOVIL MANGUERA DOSIFICADORA CHEQUE"
+    },
+    {
+        "Codigo": "PR01M_RC-126-DSF-01",
+        "Descripcion": "RACOR MOVIL MANGUERA DOSIFICADORA CHEQUE"
+    },
+    {
+        "Codigo": "PR01M_RC-126-DSF-01.M",
+        "Descripcion": "RACOR MOVIL MANGUERA DOSIFICADORA CHEQUE MECANIZADA AGUJEROS"
+    },
+    {
+        "Codigo": "PR01M_RC-333-30.C",
+        "Descripcion": "FILTRO LLAVE DE PASO MALLA NO.30 CORTAR"
+    },
+    {
+        "Codigo": "PR01M_RC-333-30.ROL",
+        "Descripcion": "FILTRO LLAVE DE PASO MALLA NO.30 ENROLLAR"
+    },
+    {
+        "Codigo": "PR01M_RC-501.PB",
+        "Descripcion": "CAMARA DE PRESION PROBAR CAMARA"
+    },
+    {
+        "Codigo": "PR01M_RC-501AEX.PB",
+        "Descripcion": "CAMARA DE PRESION AZUL PROBAR CAMARA"
+    },
+    {
+        "Codigo": "PR01M_RC-832-INY",
+        "Descripcion": "VASO DOSIFICADOR INYECTADO"
+    },
+    {
+        "Codigo": "PR01M_RC-921.INY",
+        "Descripcion": "CUERPO LLAVE STEELPLAST INYECTADA"
+    },
+    {
+        "Codigo": "PR01M_RC-922N-01",
+        "Descripcion": "TAPON"
+    },
+    {
+        "Codigo": "PR01M_RC-932.C",
+        "Descripcion": "MALLA FILTRO LLAVE DE PASO CORTAR 57 X 35 MM"
+    },
+    {
+        "Codigo": "PR01M_RCA-324-01",
+        "Descripcion": "EMPAQUE TRAPEZOIDAL"
+    },
+    {
+        "Codigo": "PR01M_RCA-346LF.EXT",
+        "Descripcion": "TUBO LANZA FLEXIBLE EXTRUIR Y CORTAR"
+    },
+    {
+        "Codigo": "PR01M_RCA-809E-01",
+        "Descripcion": "PALANCA INTEGRADA RANURADO MANGO NEGRO"
+    },
+    {
+        "Codigo": "PR01M_RCP-121M.C",
+        "Descripcion": "MALLA FILTRO BOMBA CORTAR 42 X 30 MM"
+    },
+    {
+        "Codigo": "PR01M_RCP-200I-02",
+        "Descripcion": "INSERTO SOBRE-SOPLADO RECIPIENTES"
+    },
+    {
+        "Codigo": "PR01M_RCP-622-01",
+        "Descripcion": "PERILLA RP16"
+    },
+    {
+        "Codigo": "PR01M_RCP-750-01",
+        "Descripcion": "TAPA CARCASA LED RGB"
+    },
+    {
+        "Codigo": "PR01M_RCP-850",
+        "Descripcion": "DIFUSOR TAPA CARCASA"
+    },
+    {
+        "Codigo": "PR01M_RCP-922-02",
+        "Descripcion": "TAPON MANOMETRO"
+    },
+    {
+        "Codigo": "PR01M_RC-RELOJ",
+        "Descripcion": "TAPA PARA RELOJ INYECTADA 40 AÑOS"
+    },
+    {
+        "Codigo": "PR01M_RC-VLV-ANT-100",
+        "Descripcion": "CUERPO VALVULA ANTIGOTEO"
+    },
+    {
+        "Codigo": "PR01M_RC-VLV-ANT-101",
+        "Descripcion": "TAPON VALVULA ANTIGOTEO"
+    },
+    {
+        "Codigo": "PR01M_RG-921LP.INY",
+        "Descripcion": "CUERPO LLAVE LANZA PLASTICA INYECTAR"
+    },
+    {
+        "Codigo": "PR01M_RHB-346LF.5L.EXT",
+        "Descripcion": "TUBO LANZA FLEXIBLE HANDY 5L 350MM EXTRUIR Y CORTAR 350 MM"
+    },
+    {
+        "Codigo": "PR01M_RHB-346LF.7L10L.EXT",
+        "Descripcion": "TUBO LANZA FLEXIBLE HANDY 7L Y 10L 400MM EXTRUIR Y CORTAR 400 MM"
+    },
+    {
+        "Codigo": "PR01M_RJI-101846T",
+        "Descripcion": "TAPA BOQUILLA AZUL (150CC)"
+    },
+    {
+        "Codigo": "PR01M_RJI-101847T",
+        "Descripcion": "TAPA BOQUILLA BLANCA  (250CC)"
+    },
+    {
+        "Codigo": "PR01M_RJI-110042",
+        "Descripcion": "PERILLA EMBOLO AZUL"
+    },
+    {
+        "Codigo": "PR01M_RJI-110044",
+        "Descripcion": "PALANCA ASPERSION AZUL"
+    },
+    {
+        "Codigo": "PR01M_RJI-110045P",
+        "Descripcion": "TUERCA ESPIGO OBTURADOR PLASTICA  AZUL"
+    },
+    {
+        "Codigo": "PR01M_RJI-110050",
+        "Descripcion": "FILTRO TUBO SUCCION AZUL"
+    },
+    {
+        "Codigo": "PR01M_RJI-110051",
+        "Descripcion": "TUERCA DEL EMBOLO AZUL"
+    },
+    {
+        "Codigo": "PR01M_RJI-110052",
+        "Descripcion": "SOPORTE EMBOLO AZUL"
+    },
+    {
+        "Codigo": "PR01M_RJI-110054A",
+        "Descripcion": "TAPA JARDINERA NUEVA AZUL"
+    },
+    {
+        "Codigo": "PR01M_RJI-110063",
+        "Descripcion": "TAPA VALVULA DE ALIVIO AZUL"
+    },
+    {
+        "Codigo": "PR01M_RJI-110064",
+        "Descripcion": "OBTURADOR VALVULA DE ALIVIO AZUL"
+    },
+    {
+        "Codigo": "PR01M_RM-809B.INY",
+        "Descripcion": "PALANCA CON BUJE EN NYLON CINCADO BLANCO"
+    },
+    {
+        "Codigo": "PR01M_RMI-502.INY",
+        "Descripcion": "TAPA CAMARA INYECTADA"
+    },
+    {
+        "Codigo": "PR01M_RPL-501.S",
+        "Descripcion": "CAMARA SOPLAR, MECANIZAR Y ELIM.VIRUTA"
+    },
+    {
+        "Codigo": "PR01M_RS-501EX.PC",
+        "Descripcion": "CAMARA NARANJA STIHL PROBAR CAMARA"
+    },
+    {
+        "Codigo": "PR01M_RS-501EX-01.PC",
+        "Descripcion": "CAMARA NARANJA STIHL ENSAMBLADA CON RACOR PROBAR CAMARA"
+    },
+    {
+        "Codigo": "PR01M_RS-601-NG-MT-01",
+        "Descripcion": "CHASIS TUBULAR INOXIDABLE NEGRO 2.0MM MATE"
+    },
+    {
+        "Codigo": "PR01M_RS-921LP.INY",
+        "Descripcion": "CUERPO LLAVE DE PASO STIHL INYECTAR"
+    },
+    {
+        "Codigo": "PR01M_T48.1.RJ.1.01.M",
+        "Descripcion": "TAPA ROJA SEGURIDAD 48MM CON LINER CL TALADRAR AGUJERO 12.0 MM"
+    },
+    {
+        "Codigo": "PR01M_T48.1.RJ.1.01.QP",
+        "Descripcion": "TAPA ROJA SEGURIDAD 48MM CON LINER CL QUITAR PRESINTO"
+    },
+    {
+        "Codigo": "PR05M_CE-1001.A.NR.S",
+        "Descripcion": "COLUMNA UNISECCION CON TOPE SOPLAR Y DESBARBAR"
+    },
+    {
+        "Codigo": "PR05M_CPT-002.INY",
+        "Descripcion": "CAPTAFARO PLASTICO BLANCO/BLANCO INYECTAR"
+    },
+    {
+        "Codigo": "PR05M_DVR.AM.EN",
+        "Descripcion": "DELINEADOR VIAL RESILIENTE AMARILLO ENSAMBLE MANUAL"
+    },
+    {
+        "Codigo": "PR05M_DVR.NR.EN",
+        "Descripcion": "DELINEADOR VIAL RESILIENTE NARANJA ENSAMBLE MANUAL"
+    },
+    {
+        "Codigo": "PR05M_DVR-CLM.AM.S",
+        "Descripcion": "COLUMNA DELINEADOR VIAL RESILIENTE AMARILLA SOPLAR Y DESBARBAR"
+    },
+    {
+        "Codigo": "PR05M_DVR-CLM.NR.S",
+        "Descripcion": "COLUMNA DELINEADOR VIAL RESILIENTE NARANJA SOPLAR Y DESBARBAR"
+    },
+    {
+        "Codigo": "PR05M_DVR-NCL.NT",
+        "Descripcion": "NUCLEO DELINEADOR VIAL RESILIENTE NATURAL"
+    },
+    {
+        "Codigo": "PR05M_RSL-002.AM.INY",
+        "Descripcion": "RESALTO VIAL PLASTICO AMARILLO CON LENTES SERVICIO DE INYECCION"
+    },
+    {
+        "Codigo": "PR05M_RSL-003.NG.INY",
+        "Descripcion": "RESALTO VIAL PLASTICO NEGRO CON LENTES SERVICIO DE INYECCION"
+    },
+    {
+        "Codigo": "PR05M_TCH-001.EN",
+        "Descripcion": "TACHON VIAL ALIEN FLAMEAR Y ENCINTAR"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AM.VD.1.02.I",
+        "Descripcion": "TAPA  INY VALVULA DESG D17 AMARILLA LINER ESPUMADO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AM.VD.1.02.M",
+        "Descripcion": "TAPA VALVULA DESG D17 AMARILLA LINER ESPUMADO TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AM.VD.1.02.SL",
+        "Descripcion": "TAPA VALVULA DESG D17 AMARILLA LINER ESPUMADO SERVICIO DE LINER"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AZ.1.01.I",
+        "Descripcion": "TAPA  INY SEGURIDAD 48MM AZUL CON LINER ESPUMADO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AZ.3.01.FL",
+        "Descripcion": "TAPA AZUL SEGURIDAD 48MM CON SELLO PARA FOIL SERVICIO DE FOIL"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AZ.3.01.I",
+        "Descripcion": "TAPA  INY AZUL SEGURIDAD 48MM CON SELLO PARA FOIL"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AZ.VD.1.01.I",
+        "Descripcion": "TAPA  INY 48MM AZUL VALVULA D10 Y LINER ESPUMOSO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AZ.VD.1.01.M",
+        "Descripcion": "TAPA 48MM AZUL VALVULA D10 Y LINER ESPUMOSO TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AZ.VD.1.01.SL",
+        "Descripcion": "TAPA 48MM AZUL VALVULA D10 Y LINER ESPUMOSO SERVICIO DE LINER"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AZ.VD.1.02.EN",
+        "Descripcion": "TAPA VALVULA DESG D17 AZUL LINER ESPUMADO ENSAMBLAR VALVULA"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AZ.VD.1.02.M",
+        "Descripcion": "TAPA VALVULA DESG D17 AZUL LINER ESPUMADO TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_T48.1.AZ.VD.1.02.SL",
+        "Descripcion": "TAPA VALVULA DESG D17 AZUL LINER ESPUMADO SERVICIO DE LINER"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.1.01.I",
+        "Descripcion": "TAPA INY SEGURIDAD 48MM BLANCO  CON LINER ESPUMADO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.3.01.I",
+        "Descripcion": "TAPA  INY BLANCA SEGURIDAD 48MM CON SELLO PARA FOIL"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.VD.1.01.I",
+        "Descripcion": "TAPA INY 48MM BLANCA VALVULA D10 Y LINER ESPUMOSO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.VD.1.01.M",
+        "Descripcion": "TAPA 48MM BLANCA VALVULA D10 Y LINER ESPUMOSO TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.VD.1.01.SL",
+        "Descripcion": "TAPA 48MM BLANCA VALVULA D10 Y LINER ESPUMOSO SERVICIO DE LINER"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.VD.1.02.I",
+        "Descripcion": "TAPA  INY VALVULA DESG D17 BLANCA LINER ESPUMADO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.VD.1.02.M",
+        "Descripcion": "TAPA VALVULA DESG D17 BLANCA LINER ESPUMADO TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.VD.1.02.SL",
+        "Descripcion": "TAPA VALVULA DESG D17 BLANCA LINER ESPUMADO SERVICIO DE LINER"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.VD.1.03.E",
+        "Descripcion": "TAPA VALVULA DESG D17 BLANCA LINER ESPUMOS LEVAPAN ENSAMBLAR LINER"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.VD.1.03.EN",
+        "Descripcion": "TAPA VALVULA DESG D17 BLANCA LINER ESPUMOS LEVAPAN ENSAMBLAR VALVULA"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.VD.1.03.I",
+        "Descripcion": "TAPA  INY VALVULA DESG D17 BLANCA LINER ESPUMOS LEVAPAN"
+    },
+    {
+        "Codigo": "PR06M_T48.1.BL.VD.1.03.M",
+        "Descripcion": "TAPA VALVULA DESG D17 BLANCA LINER ESPUMOS LEVAPAN TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_T48.1.NR.1.01.I",
+        "Descripcion": "TAPA  INY SEGURIDAD 48MM NARANJA CON LINER ESPUMADO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.RJ.1.01.I",
+        "Descripcion": "TAPA  INY SEGURIDAD 48MM ROJA CON LINER ESPUMADO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.RJ.3.01.FL",
+        "Descripcion": "TAPA ROJA SEGURIDAD 48MM CON SELLO PARA FOIL SERVICIO DE FOIL"
+    },
+    {
+        "Codigo": "PR06M_T48.1.RJ.3.01.I",
+        "Descripcion": "TAPA INY ROJA SEGURIDAD 48MM CON SELLO PARA FOIL"
+    },
+    {
+        "Codigo": "PR06M_T48.1.RJ.VD.1.01.EN",
+        "Descripcion": "TAPA 48MM ROJA VALVULA D10 Y LINER ESPUMOSO ENSAMBLAR VALVULA"
+    },
+    {
+        "Codigo": "PR06M_T48.1.RJ.VD.1.01.I",
+        "Descripcion": "TAPA INY 48MM ROJA VALVULA D10 Y LINER ESPUMOSO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.RJ.VD.1.01.M",
+        "Descripcion": "TAPA 48MM ROJA VALVULA D10 Y LINER ESPUMOSO TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_T48.1.RJ.VD.1.01.SL",
+        "Descripcion": "TAPA 48MM ROJA VALVULA D10 Y LINER ESPUMOSO SERVICIO DE LINER"
+    },
+    {
+        "Codigo": "PR06M_T48.1.RJ.VD.1.02.I",
+        "Descripcion": "TAPA  INY VALVULA DESG D17 ROJA LINER ESPUMADO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.RJ.VD.1.02.LN",
+        "Descripcion": "TAPA VALVULA DESG D17 ROJA LINER ESPUMADO ENSAMBLE LINER"
+    },
+    {
+        "Codigo": "PR06M_T48.1.RJ.VD.1.02.M",
+        "Descripcion": "TAPA VALVULA DESG D17 ROJA LINER ESPUMADO TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VL.1.01.I",
+        "Descripcion": "TAPA  INY SEGURIDAD 48MM VERDE LIMON LINER ESPUMADO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VL.VD.1.01.I",
+        "Descripcion": "TAPA  INY 48MM VERDE LIMON VALVULA D10 Y LINER ESPUMOSO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VL.VD.1.01.M",
+        "Descripcion": "TAPA 48MM VERDE LIMON VALVULA D10 Y LINER ESPUMOSO TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VL.VD.1.01.SL",
+        "Descripcion": "TAPA 48MM VERDE LIMON VALVULA D10 Y LINER ESPUMOSO SERIVICIO DE LINER"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VR.1.01.I",
+        "Descripcion": "TAPA INY SEGURIDAD 48MM VERDE CON LINER ESPUMADO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VR.3.01.I",
+        "Descripcion": "TAPA INY VERDE SEGURIDAD 48MM CON SELLO PARA FOIL"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VR.VD.1.01.I",
+        "Descripcion": "TAPA  INY 48MM VERDE VALVULA D10 Y LINER ESPUMOSO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VR.VD.1.01.M",
+        "Descripcion": "TAPA 48MM VERDE VALVULA D10 Y LINER ESPUMOSO TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VR.VD.1.01.SL",
+        "Descripcion": "TAPA 48MM VERDE VALVULA D10 Y LINER ESPUMOSO SERVICIO DE LINER"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VR.VD.1.02.I",
+        "Descripcion": "TAPA  INY VALVULA DESG D17 VERDE LINER ESPUMADO"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VR.VD.1.02.M",
+        "Descripcion": "TAPA VALVULA DESG D17 VERDE LINER ESPUMADO TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_T48.1.VR.VD.1.02.SL",
+        "Descripcion": "TAPA VALVULA DESG D17 VERDE LINER ESPUMADO SERVICIO DE LINER"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.AM.VD.1.01.E",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA AMARILLA GARRAFA 20L ENMSABLAR LINER"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.AM.VD.1.01.I",
+        "Descripcion": "TAPA  INY VALVULA DESGASIFICADORA AMARILLA GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.AM.VD.1.01.M",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA AMARILLA GARRAFA 20L TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.AZ.1.01.I",
+        "Descripcion": "TAPA  INY SEGURIDAD AZUL CON LINER GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.AZ.VD.1.01.E",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA AZUL GARRAFA 20L ENSAMBLAR LINER"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.AZ.VD.1.01.I",
+        "Descripcion": "TAPA  INY VALVULA DESGASIFICADORA AZUL GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.AZ.VD.1.01.M",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA AZUL GARRAFA 20L TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.BL.1.03.I",
+        "Descripcion": "TAPA  INY SEGURIDAD BLANCA CON LINER GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.BL.VD.1.01.E",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA BLANCA GARRAFA 20L ENSABLAR LINER"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.BL.VD.1.01.I",
+        "Descripcion": "TAPA  INY VALVULA DESGASIFICADORA BLANCA GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.BL.VD.1.01.M",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA BLANCA GARRAFA 20L TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.NG.0.01.I",
+        "Descripcion": "TAPA  INY SEGURIDAD NEGRA CON LINER GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.NG.1.01.I",
+        "Descripcion": "TAPA  INY SEGURIDAD NEGRA CON LINER GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.NG.VD.1.01.E",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA NEGRA GARRAFA 20L ENSAMBLE LINER"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.NG.VD.1.01.I",
+        "Descripcion": "TAPA  INY VALVULA DESGASIFICADORA NEGRA GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.NG.VD.1.01.M",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA NEGRA GARRAFA 20L TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.RJ.1.01.I",
+        "Descripcion": "TAPA  INY SEGURIDAD ROJA CON LINER GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.RJ.VD.1.01.E",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA ROJA GARRAFA 20L ENSAMBLAR LINER"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.RJ.VD.1.01.I",
+        "Descripcion": "TAPA  INY VALVULA DESGASIFICADORA ROJA GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.RJ.VD.1.01.M",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA ROJA GARRAFA 20L TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.VL.VD.1.01.E",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA VERDE LIMON GARRAFA 20L ENSAMBLAR LINER"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.VL.VD.1.01.I",
+        "Descripcion": "TAPA  INY VALVULA DESGASIFICADORA VERDE LIMON GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.VL.VD.1.01.M",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA VERDE LIMON GARRAFA 20L TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.VR.1.01.I",
+        "Descripcion": "TAPA  INY SEGURIDAD VERDE CON LINER GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.VR.VD.1.01.E",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA VERDE GARRAFA 20L ENSAMBLAR LINER"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.VR.VD.1.01.I",
+        "Descripcion": "TAPA  INY VALVULA DESGASIFICADORA VERDE GARRAFA 20L"
+    },
+    {
+        "Codigo": "PR06M_TP60.1.VR.VD.1.01.M",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA VERDE GARRAFA 20L TALADRAR AGUJERO DE 2 MM"
+    },
+    {
+        "Codigo": "TR06M_BT1L.1.BL.90.04",
+        "Descripcion": "RECIP 1L BLANCO TAPA 48MM S/T (90GR) DOBLE BOLSA"
+    },
+    {
+        "Codigo": "TR06M_GR20L.1.BL.1200.01",
+        "Descripcion": "GARRAFA 20L 4G VIRGEN BLANCA 1200 ALTO PESO"
+    },
+    {
+        "Codigo": "TR06M_GR20L.1.BL.1300.01",
+        "Descripcion": "GARRAFA 20L 4G VIRGEN BLANCA 1300 ALTO PESO MOLECULAR"
+    },
+    {
+        "Codigo": "TR06M_GR20L.1.NG.1500.01",
+        "Descripcion": "GARRAFA 20L 4G VIRGEN NEGRA 1500 ALTO PESO MOLECULAR"
+    },
+    {
+        "Codigo": "TR06M_GR20L.1.VR.1100.02",
+        "Descripcion": "GARRAFA 20L 4G VIRGEN VERDE OSCURO 1.100 ALTO PESO MOLECULAR"
+    },
+    {
+        "Codigo": "TR06M_GR4L.1.NG.240.01",
+        "Descripcion": "RECIP RECT 4L NEGRO TAPA 48MM (240 G.)"
+    },
+    {
+        "Codigo": "TR06M_T48.1.AM.VD.1.02",
+        "Descripcion": "TAPA VALVULA DESG D17 AMARILLA LINER ESPUMADO"
+    },
+    {
+        "Codigo": "TR06M_T48.1.RJ.VD.1.02",
+        "Descripcion": "TAPA VALVULA DESG D17 ROJA LINER ESPUMADO"
+    },
+    {
+        "Codigo": "TR06M_TP60.1.BL.VD.1.01",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA BLANCA GARRAFA 20L"
+    },
+    {
+        "Codigo": "TR06M_TP60.1.NG.1.01",
+        "Descripcion": "TAPA SEGURIDAD NEGRA CON LINER GARRAFA 20L"
+    },
+    {
+        "Codigo": "TR06M_TP60.1.NG.VD.1.01",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA NEGRA GARRAFA 20L"
+    },
+    {
+        "Codigo": "TR06M_TP60.1.RJ.VD.0.01",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA ROJA GARRAFA 20L"
+    },
+    {
+        "Codigo": "TR06M_TP60.1.VR.VD.0.01",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA VERDE GARRAFA 20L"
+    },
+    {
+        "Codigo": "TR06M_TP60.1.VR.VD.0.02",
+        "Descripcion": "TAPA VALVULA DESGASIFICADORA VERDE GARRAFA 20L"
     }
 ]
