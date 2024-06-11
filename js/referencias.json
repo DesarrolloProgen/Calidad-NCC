@@ -31330,5 +31330,9 @@
     {
         "Codigo": "TR06M_TP60.1.VR.VD.0.02",
         "Descripcion": "TAPA VALVULA DESGASIFICADORA VERDE GARRAFA 20L"
+    },
+    {
+        "Codigo": "TR06M_GR20L.2.RJ.900.01",
+        "Descripcion": "GARRAFA 20L 4G POSTCONSUMO ROJA 900"
     }
 ]
