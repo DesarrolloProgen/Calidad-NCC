@@ -44,7 +44,7 @@ function ordenOnchange(sel) {
   divManufactura = document.getElementById("seccionManufactura");
   divDescripcion = document.getElementById("seccionDescripcionInspeccion");
   $("#nomProvCli").html("");
-  if (sel.value == "Manufactura") {
+  if (sel.value == "Manufactura" || sel.value == "Producto Terminado") {
     divManufactura.style.display = "";
     divDescripcion.style.display = "";
     $("#nomProvCli").html(clientes);

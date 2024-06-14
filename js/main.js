@@ -177,8 +177,8 @@ function saveFileNoConforme(f) {
       filename: file.name,
       mimeType: file.type,
       contenido: {
-        "content-type": file.type,
-        $content: contenido[1],
+        "$content-type": file.type,
+        "$content" : contenido[1],
       },
     };
     archivoNoConforme.push(obj);
@@ -200,8 +200,8 @@ function saveFileConforme(f) {
       filename: file.name,
       mimeType: file.type,
       contenido: {
-        "content-type": file.type,
-        $content: contenido[1],
+        "$content-type": file.type,
+        "$content" : contenido[1],
       },
     };
     archivoConforme.push(obj);

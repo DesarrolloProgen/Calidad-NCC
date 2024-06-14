@@ -39,11 +39,11 @@
       <h1 style="margin: 20px;">Reporte de Producto No Conforme.</h1>
       </div>  
     </div>
-<form id="formulario">
+<form id="formulario" autocomplete="off">
   <fieldset class="border p-2">
    <legend  class="w-auto" style="margin-left: 50px">Reporte Calidad</legend>
    <div class="container">
-    <!--Fila número de certificado de no Conformidad-->
+    <!--Fila Nombre inspector Calidad-->
   <div class="row g-3 align-items-center">
     <label for="nombreInspector" class="col-sm-4 col-form-label offset-md-1">Inspector de Calidad</label>
     <div class="col-md-4">
@@ -52,12 +52,24 @@
       </select>
     </div>
   </div>
+  <!--Fila tipo de Orden-->
+  <div class="row g-3 align-items-center">
+    <label for="tipoOrden" class="col-sm-4 col-form-label offset-md-1">Tipo de Orden:</label>
+    <div class="col-md-4">
+      <select id="tipoOrden" name="tipoOrden" class="form-control" onchange="ordenOnchange(this)">
+          <option disabled selected>Selecciona una opción</option>
+          <option value="Compra">Compra</option>
+          <option value="Manufactura">Manufactura</option>
+          <option value="Producto Terminado">Producto Terminado</option>
+        </select>
+    </div>
+  </div>
 
   <!--Fila número de certificado de no Conformidad-->
   <div class="row g-3 align-items-center">
-    <label for="noCertificado" class="col-sm-4 col-form-label offset-md-1">Número de Certificado de No conformidad</label>
+    <label for="noCertificado" class="col-sm-4 col-form-label offset-md-1">Número de NCC u orden de Compra</label>
     <div class="col-md-4">
-      <input id="noCertificado" class="form-control" type="text" placeholder="Ingrese su número de Certificado" requerid>
+      <input id="noCertificado" class="form-control" type="text" placeholder="Ingrese su número de NCC u OC" requerid>
     </div>
   </div>
 
@@ -76,18 +88,6 @@
     <label for="descreferencia" class="col-sm-4 col-form-label offset-md-1">Descripción de Referencia:</label>
     <div class="col-md-4">
       <input id="descreferencia" name="descreferencia" class="form-control" type="text" requerid disabled>
-    </div>
-  </div>
-
-  <!--Fila tipo de Orden-->
-  <div class="row g-3 align-items-center">
-    <label for="tipoOrden" class="col-sm-4 col-form-label offset-md-1">Tipo de Orden:</label>
-    <div class="col-md-4">
-      <select id="tipoOrden" name="tipoOrden" class="form-control" onchange="ordenOnchange(this)">
-          <option disabled selected>Selecciona una opción</option>
-          <option value="Manufactura">Manufactura</option>
-          <option value="Compra">Compra</option>
-        </select>
     </div>
   </div>
 
