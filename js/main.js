@@ -7,18 +7,24 @@ window.addEventListener("load", function () {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     console.log(inspectores);
+    let correos = [];
+    [...correo].forEach(element => {
+      correos.push(element.value);
+    });
+    
     if (!validaciones()) return false;
 
     if (tipoOrden.value == "Compra") {
       data = {
         fecha: fechayHora,
         nombreInspector: nombreInspector.value,
-        noCertificado: noCertificado.value,
+        tipoOrden: tipoOrden.value,
+        tipoCompra: tipoCompra.value,
+        noCertificado: tipoCompra.value != "Lote con Observación" ? noCertificado.value : '',
         referenciaInspeccionada: referenciaInspeccionada.value,
         descripcionreferencia: descripcionreferencia.value,
-        tipoOrden: tipoOrden.value,
-        nomProvCli: nomProvCli.value,
         noOrden: noOrden.value,
+        nomProvCli: nomProvCli.value,
         cantidadLote: cantidadLote.value,
         noMuestra: noMuestra.value,
         noconforme: noconforme.value,
@@ -36,7 +42,7 @@ window.addEventListener("load", function () {
         descripcion: descripcion.value,
         archivoNoConforme: archivoNoConforme,
         archivoConforme: archivoConforme,
-        correo: correo.value.replace(/,/g, ";"),
+        correo: correos.join(';'),
         correoInspector: inspectores.find(
           (inspector) =>
             inspector.Codigo + " - " + inspector.Nombre ===
@@ -47,32 +53,27 @@ window.addEventListener("load", function () {
       data = {
         fecha: fechayHora,
         nombreInspector: nombreInspector.value,
+        tipoOrden: tipoOrden.value,
         noCertificado: noCertificado.value,
         referenciaInspeccionada: referenciaInspeccionada.value,
         descripcionreferencia: descreferencia.value,
-        tipoOrden: tipoOrden.value,
-        nomProvCli: nomProvCli.value,
         noOrden: noOrden.value,
+        nomProvCli: nomProvCli.value,
         cantidadLote: cantidadLote.value,
         noMuestra: noMuestra.value,
         noconforme: noconforme.value,
         rechazadas: rechazadas.value,
-        descripcion: descripcion.value,
-        archivoNoConforme: archivoNoConforme,
-        archivoConforme: archivoConforme,
         centroTrabajo: centroTrabajo.value,
         horario: horario.value,
         nombreOperario: nombreOperario.value,
         responsableO: responsableO == "Si" ? true : false,
+        controlProcesoO: controlProcesoO == "Si" ? true : false,
+        nombreOperario2: nombreOperario2.value,
+        responsableO2: responsableO2 == "Si" ? true : false,
+        controlProcesoO2: controlProcesoO2 == "Si" ? true : false,
         nombreLider: nombreLider.value,
         responsableJ: responsableJ == "Si" ? true : false,
         procInterno: procInterno.value,
-        correo: correo.value.replace(/,/g, ";"),
-        correoInspector: inspectores.find(
-          (inspector) =>
-            inspector.Codigo + " - " + inspector.Nombre ===
-            nombreInspector.value
-        ).Correo,
         factor: factor.value,
         descripcionFactor: descripcionFactor.value,
         AnalisisJefePlanta: AnalisisJefePlanta == "Si" ? true : false,
@@ -80,9 +81,18 @@ window.addEventListener("load", function () {
         AnalisisFuncionario: AnalisisFuncionario == "Si" ? true : false,
         AnalisisInspector: AnalisisInspector == "Si" ? true : false,
         AnalisisIngenieroManufactura:
-          AnalisisIngenieroManufactura == "Si" ? true : false,
+        AnalisisIngenieroManufactura == "Si" ? true : false,
         descripcionAnalisis: descripcionAnalisis.value,
         defecto: defecto.value,
+        descripcion: descripcion.value,
+        archivoNoConforme: archivoNoConforme,
+        archivoConforme: archivoConforme,
+        correo: correos.join(';'),
+        correoInspector: inspectores.find(
+          (inspector) =>
+            inspector.Codigo + " - " + inspector.Nombre ===
+          nombreInspector.value
+        ).Correo,
       };
     }
     console.log(data);
@@ -211,3 +221,15 @@ function saveFileConforme(f) {
   }
   console.log(archivoConforme);
 }
+
+$(document).ready(function(){
+    
+  var multipleCancelButton = new Choices('#emails', {
+     removeItemButton: true,
+     maxItemCount: 8,
+     searchResultLimit:8,
+     renderChoiceLimit:8
+   }); 
+  
+  
+});

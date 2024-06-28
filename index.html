@@ -4,6 +4,9 @@
     <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -16,7 +19,7 @@
       crossorigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
       <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
       
   <!-- Modificaciones a Boostrap -->
   <style>
@@ -65,8 +68,20 @@
     </div>
   </div>
 
+  <!--Fila tipo de Compra-->
+  <div id="filtroCompra"  style="display: none;" class="row g-3 align-items-center">
+    <label for="tipoCompra" class="col-sm-4 col-form-label offset-md-1">Tipo de Compra:</label>
+    <div class="col-md-4">
+      <select id="tipoCompra" name="tipoCompra" class="form-control" onchange="filtroCompraOnchange(this)">
+          <option disabled selected>Selecciona una opción</option>
+          <option value="No Conformidad">No Conformidad</option>
+          <option value="Lote con Observación">Lote con Observación</option>
+        </select>
+    </div>
+  </div>
+
   <!--Fila número de certificado de no Conformidad-->
-  <div class="row g-3 align-items-center">
+  <div id="filtroCompraDependiente" class="row g-3 align-items-center">
     <label for="noCertificado" class="col-sm-4 col-form-label offset-md-1">Número de NCC u orden de Compra</label>
     <div class="col-md-4">
       <input id="noCertificado" class="form-control" type="text" placeholder="Ingrese su número de NCC u OC" requerid>
@@ -111,7 +126,7 @@
   <!--Fila Cantidad del Lote y Número de Muestra-->
     <div class="form-row align-items-center">
       <!--Cantidad de Lote-->
-        <label for="cantidadLote" class="col-sm-2 col-form-label offset-md-1">Cantidad del Lote:</label>
+        <label for="cantidadLote" id="Cantidad" class="col-sm-2 col-form-label offset-md-1">Cantidad del Lote:</label>
         <input id="cantidadLote" class="form-control col-md-2" type="text" placeholder="Ingrese cantidad de lote" requerid>
       <!--Numero de Muestra-->
         <label for="noMuestra" class="col-sm-2 col-form-label">Número de muestra:</label>
@@ -152,25 +167,68 @@
         </div>
 
 
-      <div class="form-row align-items-center" style="padding-bottom: 15px; padding-left: 150px; ">
+      <div class="form-row align-items-center" style="padding-bottom: 15px; padding-left: 50px; ">
       <!--Operario--> 
-        <label for="nombreOperario" class="col-sm-2 col-form-label offset-md-1">Operario</label>
+        <label for="nombreOperario1" class="col-sm-2 col-form-label offset-md-1">Operario 1</label>
         <div class="col-md-3">
-            <select id="nombreOperario" name="nombreOperario" class="js-example-basic-single" style="width: 100%;">
+            <select id="nombreOperario1" name="nombreOperario1" class="js-example-basic-single" style="width: 100%;">
               <option disabled selected>Selecciona una opción</option>
             </select>
           </div>
       <!--Responsable-->
         <div class="form-check col-sm-2 form-check-inline">
-          <label class="form-check-label offset-md-1" for="ResponsableO">Responsable:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-          <input class="form-check-input" type="radio" name="ResponsableO" id="ResponsableO1" value="Si">
-          <label class="form-check-label" for="ResponsableO1">Si</label>
+          <label class="form-check-label offset-md-1" for="ResponsableO1">Responsable 1:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="form-check-input" type="radio" name="ResponsableO1" id="ResponsableO11" value="Si">
+          <label class="form-check-label" for="ResponsableO11">Si</label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="ResponsableO" id="ResponsableO2" value="No">
-          <label class="form-check-label" for="ResponsableO2">No</label>
+          <input class="form-check-input" type="radio" name="ResponsableO1" id="ResponsableO21" value="No">
+          <label class="form-check-label" for="ResponsableO21">No</label>
         </div>
+
+        <div class="form-check col-sm-2 form-check-inline">
+          <label class="form-check-label offset-md-1" for="ControlProceso1">Control de Proceso 1:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="form-check-input" type="radio" name="ControlProceso1" id="ControlProceso11" value="Si">
+          <label class="form-check-label" for="ControlProceso11">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="ControlProceso1" id="ControlProceso21" value="No">
+          <label class="form-check-label" for="ControlProceso21">No</label>
+        </div>
+
       </div>
+
+      <div class="form-row align-items-center" style="padding-bottom: 15px; padding-left: 50px; ">
+        <!--Operario2--> 
+          <label for="nombreOperario2" class="col-sm-2 col-form-label offset-md-1">Operario 2</label>
+          <div class="col-md-3">
+              <select id="nombreOperario2" name="nombreOperario2" class="js-example-basic-single" style="width: 100%;">
+                <option disabled selected>Selecciona una opción</option>
+              </select>
+            </div>
+        <!--Responsable-->
+          <div class="form-check col-sm-2 form-check-inline">
+            <label class="form-check-label offset-md-1" for="ResponsableO2">Responsable 2:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="form-check-input" type="radio" name="ResponsableO2" id="ResponsableO12" value="Si">
+            <label class="form-check-label" for="ResponsableO12">Si</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="ResponsableO2" id="ResponsableO22" value="No">
+            <label class="form-check-label" for="ResponsableO22">No</label>
+          </div>
+
+          <div class="form-check col-sm-2 form-check-inline">
+            <label class="form-check-label offset-md-1" for="ControlProceso1">Control de Proceso 2:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="form-check-input" type="radio" name="ControlProceso2" id="ControlProceso21" value="Si">
+            <label class="form-check-label" for="ControlProceso21">Si</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="ControlProceso2" id="ControlProceso22" value="No">
+            <label class="form-check-label" for="ControlProceso22">No</label>
+          </div>
+
+          
+        </div>
       
       <div class="form-row align-items-center" style="padding-bottom: 15px; padding-left: 150px; ">
       <!--Jefe de Turno-->
@@ -387,14 +445,40 @@
    <legend  class="w-auto" style="margin-left: 50px">Notificación</legend>
    <div class="row g-3 align-items-center">
      <label for="proveedor" class="col-sm-8 col-form-label offset-md-1" style="font-size: small;">
-          Usted puede registrar más de un correo en los dos campos separando los correos por comas(,)
-          Ejemplo: example1@gmail.com, example2@gmail.com, example3@gmail.com
+          Usted puede registrar más de un correo seleccionando los correos a los que desea enviar la notificación.
      </label>
    </div>
   <div class="row g-3 align-items-center">
-    <label for="correo" class="col-sm-4 col-form-label offset-md-1">Email de Notificación</label>
+    <label for="correo" class="col-sm-4 col-form-label offset-md-1">Email(s) de Notificación</label>
     <div class="col-md-4">
-      <input id="correo" class="form-control" type="text" placeholder="Ingrese los correos a notificar" requerid>
+      <select id="emails" placeholder="Seleccione maximo 8 Emails" multiple>
+        <option value="operaciones.gerente@progen.com.co">ALBERTO CASTAÑO</option>
+        <option value="id.manufactura01@progen.com.co">SAMUEL  SANCHEZ</option>
+        <option value="operaciones.liderensamble@progen.com.co">JAVIER RIOS</option>
+        <option value="calidad.director@progen.com.co">OSCAR ORJUELA</option>
+        <option value="plantaplasticos.patinador@progen.com.co">PATINADORES PLASTICOS</option>
+        <option value="produccion.jefeplasticos@progen.com.co">CARLOS TELLEZ</option>
+        <option value="produccion.liderturno3@progen.com.co">SUPERVISORES SOPLADO</option>
+        <option value="planeacion.plasticos@progen.com.co">JOHANA OLARTE</option>
+        <option value="planeacion.multiusos@progen.com.co">LINA RAMIREZ</option>
+        <option value="planeacion.metalmecanica@progen.com.co">JESSIKA CULMA</option>
+        <option value="planeacion.repuestos@progen.com.co">LAURA  BALBUENA</option>
+        <option value="operaciones.lidermultiusos@progen.com.co">JAIRO VEGA</option>
+        <option value="calidad.plasticos5@progen.com.co">JOSEPH MARROQUIN</option>
+        <option value="calidad.plasticos2@progen.com.co">EDYER CEPEDA</option>
+        <option value="calidad.plasticos7@progen.com.co">JULLY ROJAS</option>
+        <option value="calidad.plasticos3@progen.com.co">ISAAC OLIVEROS</option>
+        <option value="calidad.plasticos1@progen.com.co">YONAR GUTIERREZ</option>
+        <option value="calidad.gestion@progen.com.co">OIBIN MARENTES</option>
+        <option value="planeacion.director@progen.com.co">DIANA RAMIREZ</option>
+        <option value="almacen.jefe@progen.com.co">EDGAR SÁNCHEZ</option>
+        <option value="almacen.motorizados@progen.com.co">ALMACÉN MOTORIZADOS</option>
+        <option value="operaciones.lidermetales@progen.com.co">CARLOS NARANJO</option>
+        <option value="calidad.metalmecanica@progen.com.co">NICOLAS SANCHEZ</option>
+        <option value="logistica.abastecimiento@progen.com.co">PATRICIA JARA</option>
+        <option value="almacen.partes@progen.com.co">ALMACEN PARTES</option>
+        <option value="calidad.proveedores@progen.com.co">ISLEN GUERRERO</option>
+    </select>    
     </div>
   </div>
     <div class="row">

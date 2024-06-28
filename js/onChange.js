@@ -43,16 +43,39 @@ $(document).ready(function () {
 function ordenOnchange(sel) {
   divManufactura = document.getElementById("seccionManufactura");
   divDescripcion = document.getElementById("seccionDescripcionInspeccion");
+  divTipoCompra = document.getElementById("filtroCompra");
+  divCompraDependiente = document.getElementById("filtroCompraDependiente");
+
   $("#nomProvCli").html("");
   if (sel.value == "Manufactura" || sel.value == "Producto Terminado") {
     divManufactura.style.display = "";
     divDescripcion.style.display = "";
+    divTipoCompra.style.display = "none";
+    divCompraDependiente.style.display = "";
     $("#nomProvCli").html(clientes);
+    sel.value == "Producto Terminado"
+      ? $("#Cantidad").html("Cantidad de Seriales")
+      : $("#Cantidad").html("Cantidad del Lote");
+    sel.value == "Producto Terminado"
+      ? $("#cantidadLote").attr(
+          "placeholder",
+          "Ingrese la cantidad de seriales"
+        )
+      : $("#cantidadLote").attr("placeholder", "Ingrese la cantidad del Lote");
   }
   if (sel.value == "Compra" || sel.value == "Selecciona una opción") {
     divManufactura.style.display = "none";
     divDescripcion.style.display = "none";
-
+    divTipoCompra.style.display = "";
     $("#nomProvCli").html(proveedores);
+  }
+}
+
+function filtroCompraOnchange(sel) {
+  divCompraDependiente = document.getElementById("filtroCompraDependiente");
+  if (sel.value === "Lote con Observación") {
+    divCompraDependiente.style.display = "none";
+  } else {
+    divCompraDependiente.style.display = "";
   }
 }
