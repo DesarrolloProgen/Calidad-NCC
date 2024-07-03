@@ -175,7 +175,8 @@ function cambiarListas(data, referencia) {
   $("#nombreLider").html(listJefeTurno);
   $("#procInterno").html(listProceIncumplido);
   $("#factor").html(listFactores);
-  $("#nombreOperario").html(listFuncionario);
+  $("#nombreOperario1").html(listFuncionario);
+  $("#nombreOperario2").html(listFuncionario);
   $("#referenciaInspeccionada").html(listReferencias);
   $("#defecto").html(listDefectos);
 }
