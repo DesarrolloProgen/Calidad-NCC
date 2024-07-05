@@ -113,9 +113,9 @@ function validaciones() {
     return false;
   }
   if (
-    (tipoOrden === "Compra" && tipoCompra.value == null) ||
+    tipoOrden === "Compra" && (tipoCompra.value == null ||
     tipoCompra.value == "" ||
-    tipoCompra.value == "Selecciona una opción"
+    tipoCompra.value == "Selecciona una opción")
   ) {
     document.getElementById("headermensaje").style.background = "#ff3c37";
     document.getElementById("titulomensaje").innerHTML = "ERROR";
