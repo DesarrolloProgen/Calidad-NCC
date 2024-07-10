@@ -136,7 +136,7 @@ jQuery(document).ready(function () {
     jQuery(this).val(
       jQuery(this)
         .val()
-        .replace(/[^0-9]/g, "")
+        .replace(/[^0-9.]/g, "")
     );
   });
 
@@ -145,7 +145,7 @@ jQuery(document).ready(function () {
     jQuery(this).val(
       jQuery(this)
         .val()
-        .replace(/[^0-9]/g, "")
+        .replace(/[^0-9.]/g, "")
     );
   });
   jQuery("#cantidadLote").on("input", function (evt) {
@@ -153,7 +153,7 @@ jQuery(document).ready(function () {
     jQuery(this).val(
       jQuery(this)
         .val()
-        .replace(/[^0-9]/g, "")
+        .replace(/[^0-9.]/g, "")
     );
   });
 
@@ -162,7 +162,7 @@ jQuery(document).ready(function () {
     jQuery(this).val(
       jQuery(this)
         .val()
-        .replace(/[^0-9]/g, "")
+        .replace(/[^0-9.]/g, "")
     );
   });
 
@@ -171,7 +171,7 @@ jQuery(document).ready(function () {
     jQuery(this).val(
       jQuery(this)
         .val()
-        .replace(/[^0-9]/g, "")
+        .replace(/[^0-9.]/g, "")
     );
   });
 });
