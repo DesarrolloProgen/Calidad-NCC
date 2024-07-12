@@ -75,7 +75,7 @@ function validar_email(email) {
   var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   return regex.test(email) ? true : false;
 }
-function validaciones() {
+function validaciones(correos) {
   // Validacion de Nombre del Instector
   if (
     nombreInspector.value == null ||
@@ -427,6 +427,13 @@ function validaciones() {
     document.getElementById("titulomensaje").innerHTML = "ERROR";
     document.getElementById("mensaje").innerHTML =
       "Ingrese archivo de evidencia de No conformidad";
+    return false;
+  }
+  if (correos.length <= 0) {
+    document.getElementById("headermensaje").style.background = "#ff3c37";
+    document.getElementById("titulomensaje").innerHTML = "ERROR";
+    document.getElementById("mensaje").innerHTML =
+      "Debe ingresar los correos de notificicación";
     return false;
   }
   return true;

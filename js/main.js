@@ -8,11 +8,11 @@ window.addEventListener("load", function () {
     event.preventDefault();
     console.log(inspectores);
     let correos = [];
-    [...correo].forEach(element => {
+    [...correo].forEach((element) => {
       correos.push(element.value);
     });
-    
-    if (!validaciones()) return false;
+
+    if (!validaciones(correos)) return false;
 
     if (tipoOrden.value == "Compra") {
       data = {
@@ -20,7 +20,8 @@ window.addEventListener("load", function () {
         nombreInspector: nombreInspector.value,
         tipoOrden: tipoOrden.value,
         tipoCompra: tipoCompra.value,
-        noCertificado: tipoCompra.value != "Lote con Observación" ? noCertificado.value : '',
+        noCertificado:
+          tipoCompra.value != "Lote con Observación" ? noCertificado.value : "",
         referenciaInspeccionada: referenciaInspeccionada.value,
         descripcionreferencia: descripcionreferencia.value,
         noOrden: noOrden.value,
@@ -42,7 +43,7 @@ window.addEventListener("load", function () {
         descripcion: descripcion.value,
         archivoNoConforme: archivoNoConforme,
         archivoConforme: archivoConforme,
-        correo: correos.join(';'),
+        correo: correos.join(";"),
         correoInspector: inspectores.find(
           (inspector) =>
             inspector.Codigo + " - " + inspector.Nombre ===
@@ -81,17 +82,17 @@ window.addEventListener("load", function () {
         AnalisisFuncionario: AnalisisFuncionario == "Si" ? true : false,
         AnalisisInspector: AnalisisInspector == "Si" ? true : false,
         AnalisisIngenieroManufactura:
-        AnalisisIngenieroManufactura == "Si" ? true : false,
+          AnalisisIngenieroManufactura == "Si" ? true : false,
         descripcionAnalisis: descripcionAnalisis.value,
         defecto: defecto.value,
         descripcion: descripcion.value,
         archivoNoConforme: archivoNoConforme,
         archivoConforme: archivoConforme,
-        correo: correos.join(';'),
+        correo: correos.join(";"),
         correoInspector: inspectores.find(
           (inspector) =>
             inspector.Codigo + " - " + inspector.Nombre ===
-          nombreInspector.value
+            nombreInspector.value
         ).Correo,
       };
     }
@@ -188,7 +189,7 @@ function saveFileNoConforme(f) {
       mimeType: file.type,
       contenido: {
         "$content-type": file.type,
-        "$content" : contenido[1],
+        $content: contenido[1],
       },
     };
     archivoNoConforme.push(obj);
@@ -211,7 +212,7 @@ function saveFileConforme(f) {
       mimeType: file.type,
       contenido: {
         "$content-type": file.type,
-        "$content" : contenido[1],
+        $content: contenido[1],
       },
     };
     archivoConforme.push(obj);
@@ -222,14 +223,11 @@ function saveFileConforme(f) {
   console.log(archivoConforme);
 }
 
-$(document).ready(function(){
-    
-  var multipleCancelButton = new Choices('#emails', {
-     removeItemButton: true,
-     maxItemCount: 8,
-     searchResultLimit:8,
-     renderChoiceLimit:8
-   }); 
-  
-  
+$(document).ready(function () {
+  var multipleCancelButton = new Choices("#emails", {
+    removeItemButton: true,
+    maxItemCount: 20,
+    searchResultLimit: 8,
+    renderChoiceLimit: 20,
+  });
 });
