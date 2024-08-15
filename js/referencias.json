@@ -31334,5 +31334,13 @@
     {
         "Codigo": "TR06M_GR20L.2.RJ.900.01",
         "Descripcion": "GARRAFA 20L 4G POSTCONSUMO ROJA 900"
+    },
+    {
+        "Codigo": "PR01M_RC-200-02.S.BL.P24E",
+        "Descripcion": "RECIPIENTE SOPLADO 20L REFRESH BL 4 ENTRADAS PERFORACION 2"
+    },
+    {
+        "Codigo": "PR01C_ RJ-110046-01",
+        "Descripcion": "RESORTE OBTURADOR"
     }
 ]
