@@ -31350,5 +31350,9 @@
     {
         "Codigo": "MP01C_BLS.LDPE.110X600.C2",
         "Descripcion": "BOLSA CON PRE-CORTE BAJA 110MMX600MM CAL2"
+    },
+        {
+        "Codigo": "PR01M_RC-408-02",
+        "Descripcion": "TUERCA INSERTO EMBOLO"
     }
 ]
