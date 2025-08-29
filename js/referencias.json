@@ -31351,8 +31351,28 @@
         "Codigo": "MP01C_BLS.LDPE.110X600.C2",
         "Descripcion": "BOLSA CON PRE-CORTE BAJA 110MMX600MM CAL2"
     },
-        {
+    {
         "Codigo": "PR01M_RC-408-02",
         "Descripcion": "TUERCA INSERTO EMBOLO"
+    },
+    {
+        "Codigo": "PR01C_RJ-110049-01",
+        "Descripcion": "TUBO DE SUCCION"
+    },
+    {
+        "Codigo": "PR01C_RCP-204-V03",
+        "Descripcion": "CALCOMANIA BOQUILLAS LA PILA"
+    },
+    {
+        "Codigo": "RP01M_MA-126X",
+        "Descripcion": "TUBO DE SALIDA"
+    },
+    {
+        "Codigo": "PR01M_RC-100-01",
+        "Descripcion": "CABEZOTE BOMBA 2G"
+    },
+    {
+        "Codigo": "PR01C_RC-211-V02",
+        "Descripcion": "CALCOMANIA 3 EN 1"
     }
 ]
