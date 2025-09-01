@@ -31374,5 +31374,17 @@
     {
         "Codigo": "PR01C_RC-211-V02",
         "Descripcion": "CALCOMANIA 3 EN 1"
+    },
+    {
+        "Codigo": "PR01C_RCP-T1-02-3L",
+        "Descripcion": "TARJETA INTEGRADA 3L"
+    },
+    {
+        "Codigo": "PR01C_RCP-T1-02-5L",
+        "Descripcion": "TARJETA INTEGRADA 3L"
+    },
+    {
+        "Codigo": "PR01C_RCP-T2-01",
+        "Descripcion": "TARJETA INDICADORA LED RGB"
     }
 ]
