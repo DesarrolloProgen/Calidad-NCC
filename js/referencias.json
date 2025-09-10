@@ -31386,5 +31386,13 @@
     {
         "Codigo": "PR01C_RCP-T2-01",
         "Descripcion": "TARJETA INDICADORA LED RGB"
+    },
+    {
+        "Codigo": "PR01C_RC-864-#1-V00",
+        "Descripcion": "CAJA UNIFICADA #1 COLOR NEGRO"
+    },
+    {
+        "Codigo": "PR01C_RC-864-#2-V00",
+        "Descripcion": "CAJA UNIFICADA #2 COLOR AZUL"
     }
 ]
