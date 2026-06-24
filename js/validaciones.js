@@ -30,6 +30,8 @@ var cantidadLote = document.getElementById("cantidadLote");
 var noMuestra = document.getElementById("noMuestra");
 var noconforme = document.getElementById("noconforme");
 var rechazadas = document.getElementById("rechazadas");
+var bodegaActual = document.getElementById("bodegaActual");
+var bodegaDestino = document.getElementById("bodegaDestino");
 //Manufactura
 var centroTrabajo = document.getElementById("centroTrabajo");
 var horario = document.getElementById("horario");
@@ -176,6 +178,22 @@ function validaciones(correos) {
     document.getElementById("titulomensaje").innerHTML = "ERROR";
     document.getElementById("mensaje").innerHTML =
       "Ingrese el número de la muestras rechazadas (Solo se aceptan números)";
+    return false;
+  }
+  //Bodega actual
+  if (bodegaActual.value == null || bodegaActual.value == "") {
+    document.getElementById("headermensaje").style.background = "#ff3c37";
+    document.getElementById("titulomensaje").innerHTML = "ERROR";
+    document.getElementById("mensaje").innerHTML =
+      "Ingrese la bodega actual";
+    return false;
+  }
+  //Bodega destino
+  if (bodegaDestino.value == null || bodegaDestino.value == "") {
+    document.getElementById("headermensaje").style.background = "#ff3c37";
+    document.getElementById("titulomensaje").innerHTML = "ERROR";
+    document.getElementById("mensaje").innerHTML =
+      "Ingrese la bodega destino";
     return false;
   }
   //VALIDACIONES SI EL TIPO DE ORDEN ES MANUFACTURA

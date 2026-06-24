@@ -31398,5 +31398,29 @@
     {
         "Codigo": "PR01C_RCP-001-5.1L",
         "Descripcion": "BOMBA SINLEADER 5.1L"
+    },
+    {
+        "Codigo": "PR01C_RCP-CNT-01-V00",
+        "Descripcion": "CINTA PARA CAJA LA PILA"
+    },
+    {
+        "Codigo": "PR01C_RCP-CNT-02-V00",
+        "Descripcion": "CINTA PARA CAJA LA PILA PRO"
+    },
+    {
+        "Codigo": "PR01C_RCP-CNT-03-V00",
+        "Descripcion": "CINTA PARA CAJA LA PILA ONE"
+    },
+    {
+        "Codigo": "PR01C_RC-CNT-01",
+        "Descripcion": "CINTA LA CLASICA CO-004 PARA CAJA # 1"
+    },
+    {
+        "Codigo": "PR01C_RC-CNT-04",
+        "Descripcion": "CINTA LA ACTIVA PARA CAJA # 2"
+    },
+    {
+        "Codigo": "PR01C_RC-CNT-06",
+        "Descripcion": "CINTA LA CLASICA EXPORTACION PARA CAJA # 1"
     }
 ]

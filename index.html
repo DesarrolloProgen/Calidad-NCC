@@ -5,8 +5,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/styles/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -50,7 +50,7 @@
   <div class="row g-3 align-items-center">
     <label for="nombreInspector" class="col-sm-4 col-form-label offset-md-1">Inspector de Calidad</label>
     <div class="col-md-4">
-      <select id="nombreInspector" name="nombreInspector" class="form-control">
+      <select id="nombreInspector" name="nombreInspector" class="js-example-basic-single" style="width: 100%;">
         <option disabled selected>Selecciona una opción</option>
       </select>
     </div>
@@ -59,7 +59,7 @@
   <div class="row g-3 align-items-center">
     <label for="tipoOrden" class="col-sm-4 col-form-label offset-md-1">Tipo de Orden:</label>
     <div class="col-md-4">
-      <select id="tipoOrden" name="tipoOrden" class="form-control" onchange="ordenOnchange(this)">
+      <select id="tipoOrden" name="tipoOrden" class="js-example-basic-single" style="width: 100%;" onchange="ordenOnchange(this)">
           <option disabled selected>Selecciona una opción</option>
           <option value="Compra">Compra</option>
           <option value="Manufactura">Manufactura</option>
@@ -72,7 +72,7 @@
   <div id="filtroCompra"  style="display: none;" class="row g-3 align-items-center">
     <label for="tipoCompra" class="col-sm-4 col-form-label offset-md-1">Tipo de Compra:</label>
     <div class="col-md-4">
-      <select id="tipoCompra" name="tipoCompra" class="form-control" onchange="filtroCompraOnchange(this)">
+      <select id="tipoCompra" name="tipoCompra" class="js-example-basic-single" style="width: 100%;" onchange="filtroCompraOnchange(this)">
           <option disabled selected>Selecciona una opción</option>
           <option value="No Conformidad">No Conformidad</option>
           <option value="Lote con Observación">Lote con Observación</option>
@@ -117,7 +117,7 @@
   <div class="row g-3 align-items-center">
       <label for="nomProvCli" class="col-sm-4 col-form-label offset-md-1">Nombre Proveedor/Cliente:</label>
       <div class="col-md-4">
-        <select id="nomProvCli" name="nomProvCli" class="form-control">
+        <select id="nomProvCli" name="nomProvCli" class="js-example-basic-single" style="width: 100%;">
           <option disabled selected>Selecciona una opción</option>
         </select>
       </div>
@@ -141,6 +141,14 @@
         <label for="rechazadas" class="col-sm-2 col-form-label">Cantidad de Piezas rechazadas:</label>
         <input id="rechazadas" class="form-control col-md-2" type="text" placeholder="Ingrese el número de piezas rechazadas" requerid>
     </div>
+
+    <!--Fila Bodega actual y Bodega destino-->
+    <div class="form-row align-items-center">
+        <label for="bodegaActual" class="col-sm-2 col-form-label offset-md-1">Bodega actual:</label>
+        <input id="bodegaActual" class="form-control col-md-2" type="text" placeholder="Ingrese la bodega actual" requerid>
+        <label for="bodegaDestino" class="col-sm-2 col-form-label">Bodega destino:</label>
+        <input id="bodegaDestino" class="form-control col-md-2" type="text" placeholder="Ingrese la bodega destino" requerid>
+    </div>
 </div>
 </fieldset>
   <!--Div si selecciona Orden de Manufactura-->
@@ -160,7 +168,7 @@
         <div class="row g-3 align-items-center">
           <label for="horario" class="col-sm-4 col-form-label offset-md-1">Turno</label>
           <div class="col-md-4">
-            <select id="horario" name="horario" class="form-control">
+            <select id="horario" name="horario" class="js-example-basic-single" style="width: 100%;">
               <option disabled selected>Selecciona una opción</option>
             </select>
           </div>
@@ -234,7 +242,7 @@
       <!--Jefe de Turno-->
         <label for="nombreLider" class="col-sm-2 col-form-label offset-md-1">Jefe de Turno</label>
         <div class="col-md-3">
-            <select id="nombreLider" name="nombreLider" class="form-control">
+            <select id="nombreLider" name="nombreLider" class="js-example-basic-single" style="width: 100%;">
               <option disabled selected>Selecciona una opción</option>
             </select>
           </div>
@@ -254,7 +262,7 @@
         <div class="row g-3 align-items-center">
           <label for="procInterno" class="col-sm-2 col-form-label offset-md-1">Procedimiento Interno que incumple</label>
           <div class="col-md-6">
-            <select id="procInterno" name="procInterno" class="form-control">
+            <select id="procInterno" name="procInterno" class="js-example-basic-single" style="width: 100%;">
               <option disabled selected>Selecciona una opción</option>
             </select>
           </div>
@@ -269,7 +277,7 @@
         <div class="row g-3 align-items-center">
           <label for="factor" class="col-sm-4 col-form-label offset-md-1">Factor</label>
           <div class="col-md-4">
-            <select id="factor" name="factor" class="form-control" onchange="factorChange(this)">
+            <select id="factor" name="factor" class="js-example-basic-single" style="width: 100%;" onchange="factorChange(this)">
               <option disabled selected>Selecciona una opción</option>
             </select>
           </div>
@@ -278,7 +286,7 @@
         <div class="row g-3 align-items-center">
           <label for="descripcionFactor" class="col-sm-4 col-form-label offset-md-1">Descripción del Factor</label>
           <div class="col-md-4">
-            <select id="descripcionFactor" name="descripcionFactor" class="form-control">
+            <select id="descripcionFactor" name="descripcionFactor" class="js-example-basic-single" style="width: 100%;">
               <option disabled selected>Selecciona una opción</option>
             </select>
           </div>

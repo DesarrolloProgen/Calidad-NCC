@@ -29,7 +29,7 @@ function factorChange(selected) {
       clienteSeleccionado.opciones[i] +
       "</option>";
   }
-  $("#descripcionFactor").html(listdescripcionfactores);
+  $("#descripcionFactor").html(listdescripcionfactores).trigger("change");
 }
 
 /*                    BUSCAR EN LOS SELECTS GRANDES                    */
@@ -52,7 +52,7 @@ function ordenOnchange(sel) {
     divDescripcion.style.display = "";
     divTipoCompra.style.display = "none";
     divCompraDependiente.style.display = "";
-    $("#nomProvCli").html(clientes);
+    $("#nomProvCli").html(clientes).trigger("change");
     sel.value == "Producto Terminado"
       ? $("#Cantidad").html("Cantidad de Seriales")
       : $("#Cantidad").html("Cantidad del Lote");
@@ -67,7 +67,7 @@ function ordenOnchange(sel) {
     divManufactura.style.display = "none";
     divDescripcion.style.display = "none";
     divTipoCompra.style.display = "";
-    $("#nomProvCli").html(proveedores);
+    $("#nomProvCli").html(proveedores).trigger("change");
   }
 }
 
